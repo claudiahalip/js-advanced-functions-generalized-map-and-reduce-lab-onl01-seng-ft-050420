@@ -16,10 +16,11 @@ function reduce(sourceArr, theFunction, initialValue = true ){
     return accum
 
     } else {
-        let accum = 0;
-        for(let elem of sourceArr){
-        accum = theFunction(elem, accum);
-        return accum ;}
+        let accum = sourceArr[0];
+        for(let i = 1; i<sourceArr.length; i++){
+        accum = theFunction(sourceArr[i], accum);
+         }
+         return accum
     }
 };
 
