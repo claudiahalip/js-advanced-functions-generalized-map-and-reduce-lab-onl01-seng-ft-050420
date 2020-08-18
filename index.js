@@ -7,7 +7,7 @@ function map(sourceArr, theFunction){
     return newA
 };
 
-function reduce(sourceArr, theFunction, initialValue = true ){
+function reduce(sourceArr, theFunction, initialValue = null ){
     if (initialValue){
     let accum = initialValue;
     for(let elem of sourceArr){
